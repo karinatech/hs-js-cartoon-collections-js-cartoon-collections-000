@@ -40,7 +40,7 @@ function longPlaneteerCalls(words) {
      return longWords;
    }
 }
-function findTheCheese (ingredients) {
+/*function findTheCheese (ingredients) {
   for (var g = 0; g < ingredients.length; g++) {
 var n = ingredients.includes("cheddar");
 if(n === false ){
@@ -49,6 +49,7 @@ if(n === false ){
 }
   }
 }
+*/
 function findTheCheese (snacks) {
   for (var i = 0; i < snacks.length; i++) {
 var j = snacks.includes("cheddar");
@@ -56,19 +57,5 @@ if(j === true ){
   return "cheddar"
    }
   }
+  return"no cheese!"
 }
-/*function findTheCheese (snacks) {
-  //snacks = ["crackers", "cheddar", "thyme"];
-  var cheese = ["cheddar", "gouda", "camembert"];
-	for (var i = 0; i < snacks.length; i++) {
-		for (var n = 0; n < cheese.length; n++) {
-
-			if ( cheese[n]=== snacks[i]) {
-				return snacks[i];
-		  
-		}
-	  		  	  
-	  }
-   }
-}
-*/
