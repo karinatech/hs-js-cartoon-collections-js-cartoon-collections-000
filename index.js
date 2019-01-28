@@ -40,22 +40,18 @@ function longPlaneteerCalls(words) {
      return longWords;
    }
 }
-/*function findTheCheese (ingredients) {
-  for (var g = 0; g < ingredients.length; g++) {
-var n = ingredients.includes("cheddar");
-if(n === false ){
-  return "no cheese!"
-  
-}
-  }
-}
-*/
+
 function findTheCheese (snacks) {
   for (var i = 0; i < snacks.length; i++) {
-var j = snacks.includes("cheddar");
-if(j === true ){
+var j = snacks.includes("cheddar")|| snacks.includes("swiss");
+if( snacks.includes("cheddar")=== true ){
   return "cheddar"
+   }
+   if(snacks.includes("swiss")===true){
+     return "swiss"
    }
   }
   return"no cheese!"
 }
+
+
